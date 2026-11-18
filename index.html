@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>개인정보 처리 안내 · Pen &amp; Ink Pro</title>
+<style>
+:root{--bg:#f7f5f0;--text:#1b2230;--muted:#586172;--line:#e1ddd2;--accent:#1e3a5f}
+@media (prefers-color-scheme:dark){:root{--bg:#12151b;--text:#e9ecf2;--muted:#a3acbb;--line:#2f3745;--accent:#8db8e6}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}
+main{max-width:720px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:24px;margin:0 0 4px}h2{font-size:18px;margin:28px 0 6px}p,li{margin:6px 0}ul{padding-left:20px}
+.muted{color:var(--muted);font-size:14px}a{color:var(--accent)}
+.todo{background:#fff3cd;color:#5c4400;padding:2px 6px;border-radius:4px}
+@media (prefers-color-scheme:dark){.todo{background:#4a3a00;color:#ffe49a}}
+table{border-collapse:collapse;width:100%;font-size:15px}th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+</style>
+</head>
+<body>
+<main>
+<h1>개인정보 처리 안내</h1>
+<p class="muted">Pen &amp; Ink Pro(만년필·잉크 기록 앱) · 시행일 2026-11-18</p>
+
+<h2>한 줄 요약</h2>
+<p>이 앱은 <b>회원가입이 없고 운영자 서버가 없습니다.</b> 입력한 만년필·잉크·기록·사진은 <b>사용자의 기기</b>에만 저장되며, 운영자는 그 내용을 받거나 볼 수 없습니다.</p>
+
+<h2>저장되는 정보와 위치</h2>
+<table>
+<tr><th>정보</th><th>저장 위치</th></tr>
+<tr><td>만년필·잉크·잉입 기록·시필 노트(메모 글 포함)</td><td>사용자 기기의 앱 저장소(IndexedDB)</td></tr>
+<tr><td>카드·시필 노트에 넣은 사진(앨범·카메라·스캔)</td><td>사용자 기기의 앱 저장소. 보관할 때 크기를 줄입니다. 사진은 사용자가 고른 것만 저장됩니다.</td></tr>
+<tr><td>마지막 백업 시각, 스캔 옵션 등 앱 설정</td><td>사용자 기기의 앱 저장소</td></tr>
+</table>
+<p>이 정보는 운영자에게 전송되지 않습니다. 이름·이메일·전화번호 같은 개인 식별 정보를 앱이 요구하지 않습니다. 앱 데이터는 Android 자동 백업(구글 계정 백업)에 포함되지 않도록 설정되어 있습니다.</p>
+
+<h2>수집하지 않는 것</h2>
+<ul>
+<li>분석·통계 도구, 광고, 추적 기능을 사용하지 않습니다.</li>
+<li>위치, 연락처, 마이크 정보를 사용하지 않습니다. 카메라는 사용자가 “카메라로 촬영”을 선택했을 때 사진 한 장을 찍는 용도로만 쓰이며, 앱은 사용자가 고른 사진만 받습니다.</li>
+<li>“스캔해서 영역 잡기”는 사진을 <b>기기 안에서만</b> 처리하며 어디로도 보내지 않습니다.</li>
+</ul>
+
+<h2>인터넷 사용</h2>
+<p>앱은 평소에 인터넷에 접속하지 않습니다. 아래의 경우에만, 사용자가 직접 누를 때 접속합니다.</p>
+<ul>
+<li><b>사진 주소로 가져오기:</b> 사용자가 “이미지 주소로 넣기”에 주소를 넣고 누르면, 앱이 <b>그 주소의 사이트</b>에서 사진을 직접 받아 기기에 저장합니다. 주소는 저장하지 않으며, 운영자에게 전송되지 않습니다. 해당 사이트에는 사용자의 접속 정보(IP 등)가 전달될 수 있습니다.</li>
+<li><b>이미지 찾기:</b> “이미지 찾기” 링크는 사용자가 누르면 이미지 검색(<code>www.google.com</code>)을 엽니다. 앱이 검색 결과를 가져오지 않습니다.</li>
+</ul>
+
+
+<h2>AI 앱에 붙여 넣기 (사용자가 직접 할 때만)</h2>
+<ul>
+<li>“사진으로 등록”, “시필 초안”, “잉크 정보 정리”는 <b>이 앱이 AI 서비스에 연결하는 기능이 아닙니다.</b> 앱은 사용자가 복사할 <b>지침 글</b>을 만들어 줄 뿐이며, 그 글을 어떤 AI 앱에 붙여 넣을지는 사용자가 정합니다. 이후의 처리는 사용자가 고른 AI 서비스의 약관과 개인정보 정책을 따릅니다.</li>
+<li>“잉크 정보 정리”에서 복사되는 글에는 <b>그 잉크의 브랜드·이름·현재 입력된 값과 ‘인터넷 정보 메모’</b>만 들어갑니다. 개인 메모(잉크 수정의 메모)와 다른 기록은 포함되지 않습니다. 메모에는 개인 정보를 적지 마세요.</li>
+<li>AI가 돌려준 답은 사용자가 붙여 넣은 뒤 <b>바뀔 내용을 확인하고 직접 선택해야</b> 반영되며, 반영한 직후에는 되돌릴 수 있습니다. 인터넷 정보 메모와 출처 주소는 다른 데이터와 같이 사용자 기기와 백업 파일에 저장됩니다.</li>
+</ul>
+
+<h2>삭제와 접근 철회</h2>
+<ul>
+<li><b>기기 안 데이터:</b> 앱 “데이터” 탭의 “모두 지우고 처음부터”로 지울 수 있고, <b>앱을 삭제하면 앱 안의 데이터도 함께 삭제</b>됩니다. 삭제 전에 백업을 받아 두세요.</li>
+
+</ul>
+
+<h2>백업 파일</h2>
+<p>앱이 만드는 백업 파일(.json/.zip)과 엑셀 파일은 사용자의 기기에 저장되며, 이를 어디에 보관하거나 누구에게 보낼지는 사용자가 정합니다. 데이터는 구글 계정으로 자동 이전되지 않으므로, 기기를 바꿀 때는 이 백업 파일로 옮겨야 합니다.</p>
+
+<h2>구매와 결제</h2>
+<p>앱 구매 결제는 스토어(Google Play)가 처리합니다. 이 앱과 운영자는 결제 정보를 받거나 저장하지 않습니다.</p>
+
+<h2>어린이</h2>
+<p>이 앱은 어린이를 대상으로 하지 않으며, 어떤 이용자의 개인정보도 운영자가 수집하지 않습니다.</p>
+
+<h2>변경</h2>
+<p>이 안내가 바뀌면 이 페이지의 시행일을 갱신해 알립니다.</p>
+
+<h2>문의</h2>
+<p>운영자: nayagiraffe · 연락처: ghim.prodigio@gmail.com</p>
+</main>
+</body>
+</html>
